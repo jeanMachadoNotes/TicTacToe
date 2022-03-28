@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Arrow Function</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+        <h3>Simple Function</h3>
+        <button id="button" onclick="conCat('Opi', 'Davy')">Click Me</button>
+        <p id="p1"></p>
+
+        <h3>Simple Function2</h3>
+        <p id="p2"></p>
+
+
+
+
+
+        <script>
+            /* Regular function  *//*
+            function conCat(name1,name2) {
+                document.getElementById("p1").innerHTML = "Sir " + name1 + " " + name2;
+            }*/
+            
+            /* Arrow Function */
+
+            conCat = (name1,name2) => document.getElementById("p1").innerHTML = "Mr. " + name1 + " " + name2;
+
+            var laptop;
+
+            laptop = (model) => "The best laptops are the " + model;
+            document.getElementById("p2").innerHTML = laptop("MSI GS66, MacbookAir, HP Spectre");
+
+
+            
+
+
+
+
+
+
+            
+
+
+
+
+
+        </script>
+    </body>
+
+</html>
